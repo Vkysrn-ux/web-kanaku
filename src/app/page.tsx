@@ -129,48 +129,67 @@ export default function Home() {
         <div className="max-w-6xl mx-auto px-4 sm:px-6">
           <div className="text-center mb-14">
             <h2 className="text-3xl sm:text-4xl font-extrabold text-[#00307e] mb-3">Everything you need to stay compliant</h2>
-            <p className="text-slate-500 text-lg max-w-xl mx-auto">A complete platform for GST filing, invoice management, and expert-verified bookkeeping.</p>
+            <p className="text-slate-500 text-lg max-w-xl mx-auto">A complete business finance operations platform</p>
           </div>
 
-          <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
-            {[
-              {
-                icon: '🤖',
-                title: 'AI Invoice Extraction',
-                desc: 'Upload any invoice — PDF, JPG, PNG. Our AI reads GSTIN, invoice number, date, HSN, tax breakup in under 30 seconds.',
-              },
-              {
-                icon: '🗂️',
-                title: 'Smart Document Vault',
-                desc: 'All your invoices stored, indexed, and searchable. Never lose a document again. Filter by month, status, or type.',
-              },
-              {
-                icon: '✅',
-                title: 'Expert-Verified Returns',
-                desc: 'Our CA team reviews AI-extracted data, reconciles with GSTR-2B, and files your GSTR-1 and GSTR-3B on time.',
-              },
-              {
-                icon: '🔄',
-                title: 'GSTR-2B Reconciliation',
-                desc: 'Match your purchase invoices against GSTR-2B automatically. Know your exact ITC eligibility before filing.',
-              },
-              {
-                icon: '💬',
-                title: 'Expert Support',
-                desc: 'Dedicated CA support via chat and WhatsApp. Ask questions, get filing confirmations, and track every step.',
-              },
-              {
-                icon: '🗓️',
-                title: 'Deadline Tracking',
-                desc: 'Never miss a due date. Smart alerts for GSTR-1, GSTR-3B, and annual returns directly on your dashboard.',
-              },
-            ].map(f => (
-              <div key={f.title} className="bg-white rounded-2xl p-6 shadow-sm border border-slate-100 hover:shadow-md transition-shadow">
-                <div className="text-4xl mb-4">{f.icon}</div>
-                <h3 className="text-lg font-bold text-slate-800 mb-2">{f.title}</h3>
-                <p className="text-slate-500 text-sm leading-relaxed">{f.desc}</p>
+          <div className="flex flex-col gap-8">
+
+            {/* GST Management Suite */}
+            <div className="bg-white rounded-2xl shadow-sm border border-slate-100 overflow-hidden">
+              <div className="flex flex-col sm:flex-row">
+                <div className="bg-[#00307e] text-white flex items-center justify-center px-8 py-6 sm:py-0 sm:min-h-[180px] sm:w-52 shrink-0">
+                  <p className="font-extrabold text-base text-center leading-snug">GST Management Suite</p>
+                </div>
+                <div className="flex-1 p-6">
+                  <p className="text-sm text-slate-500 bg-slate-50 border border-slate-100 rounded-lg px-4 py-3 mb-5 leading-relaxed">
+                    Structured GST workflows with automated reconciliation, compliance monitoring, and expert-reviewed filing support.
+                  </p>
+                  <div className="grid grid-cols-2 sm:grid-cols-3 gap-3">
+                    {[
+                      { icon: '📄', label: 'Smart Invoice Processing' },
+                      { icon: '🔄', label: 'Smart ITC Reconciliation' },
+                      { icon: '⚠️', label: 'Compliance Alerts' },
+                      { icon: '✅', label: 'Expert Compliance Review' },
+                      { icon: '⏰', label: 'Deadline Tracking' },
+                    ].map(f => (
+                      <div key={f.label} className="flex items-center gap-2 bg-slate-50 rounded-xl px-3 py-2.5">
+                        <span className="text-lg shrink-0">{f.icon}</span>
+                        <span className="text-xs font-semibold text-slate-700 leading-snug">{f.label}</span>
+                      </div>
+                    ))}
+                  </div>
+                </div>
               </div>
-            ))}
+            </div>
+
+            {/* Finance & Bookkeeping Operations */}
+            <div className="bg-white rounded-2xl shadow-sm border border-slate-100 overflow-hidden">
+              <div className="flex flex-col sm:flex-row">
+                <div className="bg-[#00307e] text-white flex items-center justify-center px-8 py-6 sm:py-0 sm:min-h-[180px] sm:w-52 shrink-0">
+                  <p className="font-extrabold text-base text-center leading-snug">Finance &amp; Bookkeeping Operations</p>
+                </div>
+                <div className="flex-1 p-6">
+                  <p className="text-sm text-slate-500 bg-slate-50 border border-slate-100 rounded-lg px-4 py-3 mb-5 leading-relaxed">
+                    Professional bookkeeping operations with structured accounting workflows and financial visibility.
+                  </p>
+                  <div className="grid grid-cols-2 sm:grid-cols-3 gap-3">
+                    {[
+                      { icon: '📘', label: 'Structured Bookkeeping' },
+                      { icon: '📊', label: 'Financial Reporting' },
+                      { icon: '📈', label: 'Business Dashboard' },
+                      { icon: '🔒', label: 'Secure Document Vault' },
+                      { icon: '💼', label: 'AP/AR Insights' },
+                    ].map(f => (
+                      <div key={f.label} className="flex items-center gap-2 bg-slate-50 rounded-xl px-3 py-2.5">
+                        <span className="text-lg shrink-0">{f.icon}</span>
+                        <span className="text-xs font-semibold text-slate-700 leading-snug">{f.label}</span>
+                      </div>
+                    ))}
+                  </div>
+                </div>
+              </div>
+            </div>
+
           </div>
         </div>
       </section>
@@ -179,16 +198,16 @@ export default function Home() {
       <section id="how-it-works" className="py-20 bg-white">
         <div className="max-w-6xl mx-auto px-4 sm:px-6">
           <div className="text-center mb-14">
-            <h2 className="text-3xl sm:text-4xl font-extrabold text-[#00307e] mb-3">How kanaku works</h2>
+            <h2 className="text-3xl sm:text-4xl font-extrabold text-[#00307e] mb-3">How Kanaku works</h2>
             <p className="text-slate-500 text-lg">Four simple steps — from invoice to filed return.</p>
           </div>
 
           <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-8">
             {[
-              { step: '01', title: 'Upload', desc: 'Drag-and-drop your sales and purchase invoices — any format.' },
-              { step: '02', title: 'AI Extracts', desc: 'Our AI reads every field and flags anything unusual for review.' },
-              { step: '03', title: 'Expert Verifies', desc: 'A CA checks, reconciles with GSTR-2B, and confirms accuracy.' },
-              { step: '04', title: 'Return Filed', desc: 'GSTR-1 and GSTR-3B filed on time. You get confirmation instantly.' },
+              { step: '01', title: 'Upload',          desc: 'Upload invoices, purchase bills, and GST documents securely from any device.' },
+              { step: '02', title: 'AI Extracts',     desc: 'Our AI reads every field and flags anything unusual for review.' },
+              { step: '03', title: 'Expert Verifies', desc: 'Compliance experts reconcile with GSTR-2B and validate filing accuracy.' },
+              { step: '04', title: 'Return Filed',    desc: 'GST returns are prepared, reviewed, and filed with confirmation tracking.' },
             ].map((item, i) => (
               <div key={item.step} className="relative text-center">
                 <div className="inline-flex items-center justify-center w-14 h-14 rounded-full bg-[#00307e] text-white text-xl font-extrabold mb-4">
@@ -202,6 +221,10 @@ export default function Home() {
               </div>
             ))}
           </div>
+
+          <p className="text-center text-[#00307e] font-bold text-lg mt-14">
+            Built to simplify monthly GST operations for Small businesses.
+          </p>
         </div>
       </section>
 
@@ -213,17 +236,17 @@ export default function Home() {
             <p className="text-slate-500 text-lg">Choose a plan that fits your business. No hidden charges.</p>
           </div>
 
-          {/* Smart GST Plans */}
+          {/* GST Management Suite Plans */}
           <div className="mb-12">
-            <h3 className="text-center text-xl font-bold text-slate-700 mb-6">Smart GST Plans</h3>
+            <h3 className="text-center text-xl font-bold text-slate-700 mb-6">GST Management Suite</h3>
             <div className="grid sm:grid-cols-3 gap-6">
               {[
                 {
                   name: 'Basic',
                   price: '₹999',
                   period: '/month',
-                  desc: 'Perfect for startups & small traders',
-                  features: ['Up to 100 invoices/month', 'AI invoice extraction', 'GSTR-1 & GSTR-3B filing', 'Email support'],
+                  desc: 'Micro & Individuals consultants',
+                  features: ['Up to 100 invoices/month', 'AI invoice extraction', 'GSTR-1 & GSTR-3B filing', 'On call Support'],
                   cta: 'Get Started',
                   highlight: false,
                 },
@@ -232,16 +255,16 @@ export default function Home() {
                   price: '₹1,999',
                   period: '/month',
                   desc: 'For growing businesses with higher volume',
-                  features: ['Up to 500 invoices/month', 'AI extraction + GSTR-2B reconciliation', 'Priority CA support', 'WhatsApp alerts', 'Deadline reminders'],
+                  features: ['Up to 500 invoices/month', 'AI extraction + GSTR-2B reconciliation', 'Dedicated Expert Support', 'WhatsApp alerts', 'Deadline reminders'],
                   cta: 'Get Started',
                   highlight: true,
                 },
                 {
-                  name: 'Enterprise',
-                  price: '₹3,499',
-                  period: '/month',
+                  name: 'QRMP',
+                  price: '₹2,499',
+                  period: '/Quarter',
                   desc: 'Unlimited volume, dedicated accountant',
-                  features: ['Unlimited invoices', 'Dedicated CA', 'GSTR-1, 3B, annual returns', 'API access', '24/7 support'],
+                  features: ['250 invoices', 'GSTR-1 & GSTR-3B', 'ITC Reconciliation'],
                   cta: 'Contact Us',
                   highlight: false,
                 },
@@ -297,18 +320,18 @@ export default function Home() {
               {[
                 {
                   name: 'Starter',
-                  price: '₹1,499',
+                  price: '₹2,999',
                   period: '/month',
                   desc: 'Full bookkeeping for small businesses',
-                  features: ['Up to 200 transactions/month', 'P&L and Balance Sheet', 'GST compliance included', 'Monthly MIS report'],
+                  features: ['Up to 40 Lacs revenue', 'P&L and Balance Sheet', 'GST compliance included', 'Monthly MIS report'],
                   highlight: false,
                 },
                 {
                   name: 'Growth',
-                  price: '₹2,999',
+                  price: '₹4,999',
                   period: '/month',
                   desc: 'Advanced accounting + tax planning',
-                  features: ['Unlimited transactions', 'Dedicated accountant', 'Tax planning advisory', 'Annual filing included', 'Priority support'],
+                  features: ['Unlimited transactions', 'Dedicated accountant', 'Tax planning advisory', 'Priority support'],
                   highlight: true,
                 },
               ].map(plan => (
@@ -354,14 +377,16 @@ export default function Home() {
       {/* ── CTA Banner ── */}
       <section className="bg-[#00307e] text-white py-16">
         <div className="max-w-3xl mx-auto px-4 sm:px-6 text-center">
-          <h2 className="text-3xl sm:text-4xl font-extrabold mb-4">Ready to simplify your GST filing?</h2>
-          <p className="text-blue-200 text-lg mb-8">Join hundreds of Indian businesses that trust kanaku for accurate, on-time compliance.</p>
+          <h2 className="text-3xl sm:text-4xl font-extrabold mb-4">Ready to Reduce Manual GST Workload by up to 80%?</h2>
+          <p className="text-blue-200 text-lg mb-8">Trusted by Indian businesses for structured bookkeeping and on-time GST compliance</p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <a
-              href={`${APP_URL}/register`}
+              href={WA_URL}
+              target="_blank"
+              rel="noopener noreferrer"
               className="bg-white text-[#00307e] font-bold text-base px-8 py-3 rounded-xl hover:bg-blue-50 transition-colors"
             >
-              Start Free Trial
+              Call Us
             </a>
             <a
               href={WA_URL}
@@ -379,7 +404,7 @@ export default function Home() {
       <footer className="bg-slate-900 text-slate-400 py-10">
         <div className="max-w-6xl mx-auto px-4 sm:px-6 flex flex-col sm:flex-row items-center justify-between gap-4">
           <div>
-            <span className="text-white font-extrabold text-lg">kanaku.co.in</span>
+            <span className="text-white font-extrabold text-lg">kanaku<span className="text-slate-400 font-light">.co.in</span></span>
             <p className="text-xs mt-1">Smart GST &amp; Accounting for Indian Businesses</p>
           </div>
           <div className="flex gap-6 text-sm">
