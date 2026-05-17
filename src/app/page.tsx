@@ -79,10 +79,10 @@ export default function Home() {
       <section className="bg-[#00307e] text-white">
         <div className="max-w-6xl mx-auto px-4 sm:px-6 py-24 text-center">
           <span className="inline-block bg-white/10 text-white text-xs font-semibold px-3 py-1 rounded-full mb-6 tracking-widest uppercase">
-            AI-Powered GST &amp; Accounting
+            Smart Compliance Platform for Small Business
           </span>
           <h1 className="text-4xl sm:text-5xl md:text-6xl font-extrabold leading-tight mb-6">
-            Smart Compliance Platform<br />for Small Business
+            Structured Accounting.<br />Stress-free Compliance.
           </h1>
           <p className="text-blue-200 text-lg sm:text-xl max-w-2xl mx-auto mb-10">
             Upload invoices, manage compliance, and track filings from one structured dashboard — built for Small businesses.
