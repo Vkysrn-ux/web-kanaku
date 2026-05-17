@@ -35,7 +35,7 @@ export default function Home() {
               href={`${APP_URL}/register`}
               className="bg-[#00307e] text-white text-sm font-semibold px-4 py-2 rounded-lg hover:bg-blue-900 transition-colors"
             >
-              Get Started Free
+              Get Started
             </a>
           </div>
 
@@ -69,7 +69,7 @@ export default function Home() {
               href={`${APP_URL}/register`}
               className="bg-[#00307e] text-white text-center py-2 rounded-lg"
             >
-              Get Started Free
+              Get Started
             </a>
           </div>
         )}
@@ -82,17 +82,19 @@ export default function Home() {
             AI-Powered GST &amp; Accounting
           </span>
           <h1 className="text-4xl sm:text-5xl md:text-6xl font-extrabold leading-tight mb-6">
-            Structured Accounting.<br />Stress-free Compliance.
+            Smart Compliance Platform<br />for Small Business
           </h1>
           <p className="text-blue-200 text-lg sm:text-xl max-w-2xl mx-auto mb-10">
-            Upload invoices, let AI extract data, get expert-verified GST returns filed — all from one clean dashboard. Built for Indian businesses.
+            Upload invoices, manage compliance, and track filings from one structured dashboard — built for Small businesses.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <a
-              href={`${APP_URL}/register`}
+              href={WA_URL}
+              target="_blank"
+              rel="noopener noreferrer"
               className="bg-white text-[#00307e] font-bold text-base px-8 py-3 rounded-xl hover:bg-blue-50 transition-colors shadow-lg"
             >
-              Start Free Trial
+              Call Us
             </a>
             <a
               href={WA_URL}
@@ -106,18 +108,17 @@ export default function Home() {
         </div>
       </section>
 
-      {/* ── Stats bar ── */}
+      {/* ── Pillars bar ── */}
       <section className="bg-[#001f52] text-white">
-        <div className="max-w-6xl mx-auto px-4 sm:px-6 py-8 grid grid-cols-2 sm:grid-cols-4 gap-6 text-center">
+        <div className="max-w-6xl mx-auto px-4 sm:px-6 py-8 grid grid-cols-1 sm:grid-cols-3 gap-0 divide-y sm:divide-y-0 sm:divide-x divide-white/10 text-center">
           {[
-            { value: '5,000+', label: 'Invoices Processed' },
-            { value: '99.9%',  label: 'Platform Uptime' },
-            { value: '<30s',   label: 'AI Extraction' },
-            { value: 'AES-256',label: 'Data Encryption' },
-          ].map(s => (
-            <div key={s.label}>
-              <div className="text-2xl sm:text-3xl font-extrabold text-white">{s.value}</div>
-              <div className="text-blue-300 text-xs sm:text-sm mt-1">{s.label}</div>
+            { icon: '🏢', label: 'Built for Indian SMEs' },
+            { icon: '⚙️', label: 'Structured Compliance Workflow' },
+            { icon: '🔒', label: 'Secure Document Handling' },
+          ].map(p => (
+            <div key={p.label} className="py-5 sm:py-4 px-6">
+              <span className="text-2xl block mb-2">{p.icon}</span>
+              <p className="text-white font-bold text-sm sm:text-base">{p.label}</p>
             </div>
           ))}
         </div>
