@@ -22,6 +22,7 @@ export default function Home() {
             <a href="#features" className="hover:text-[#00307e] transition-colors">Features</a>
             <a href="#how-it-works" className="hover:text-[#00307e] transition-colors">How It Works</a>
             <a href="#pricing" className="hover:text-[#00307e] transition-colors">Pricing</a>
+            <a href="#about" className="hover:text-[#00307e] transition-colors">About Us</a>
           </div>
 
           <div className="hidden md:flex items-center gap-3">
@@ -63,6 +64,7 @@ export default function Home() {
             <a href="#features" onClick={() => setMenuOpen(false)}>Features</a>
             <a href="#how-it-works" onClick={() => setMenuOpen(false)}>How It Works</a>
             <a href="#pricing" onClick={() => setMenuOpen(false)}>Pricing</a>
+            <a href="#about" onClick={() => setMenuOpen(false)}>About Us</a>
             <hr className="border-slate-100" />
             <a href={`${APP_URL}/login`} className="text-[#00307e]">Log in</a>
             <a
@@ -375,6 +377,101 @@ export default function Home() {
         </div>
       </section>
 
+      {/* ── About Us ── */}
+      <section id="about" className="py-20 bg-white">
+        <div className="max-w-6xl mx-auto px-4 sm:px-6">
+
+          {/* Heading */}
+          <div className="text-center mb-14">
+            <span className="inline-block bg-[#00307e]/10 text-[#00307e] text-xs font-bold px-3 py-1 rounded-full mb-4 uppercase tracking-widest">About Us</span>
+            <h2 className="text-3xl sm:text-4xl font-extrabold text-[#00307e] mb-4">Finance Professionals.<br />Not Just Software.</h2>
+            <p className="text-slate-500 text-lg max-w-2xl mx-auto leading-relaxed">
+              Kanaku is built and run by finance professionals with 20+ years of hands-on experience in GST compliance, bookkeeping, and Indian tax law.
+            </p>
+          </div>
+
+          {/* Stat cards */}
+          <div className="grid grid-cols-2 sm:grid-cols-4 gap-4 mb-16">
+            {[
+              { value: '20+', label: 'Years of GST & Accounting Expertise' },
+              { value: '500+', label: 'Businesses Served Across India' },
+              { value: '100%', label: 'Expert-Reviewed Returns — No Automation-Only Filing' },
+              { value: '₹0', label: 'Hidden Charges — Fully Transparent Pricing' },
+            ].map(s => (
+              <div key={s.label} className="bg-slate-50 border border-slate-100 rounded-2xl p-5 text-center">
+                <p className="text-3xl font-extrabold text-[#00307e] mb-1">{s.value}</p>
+                <p className="text-xs text-slate-500 font-medium leading-snug">{s.label}</p>
+              </div>
+            ))}
+          </div>
+
+          {/* Main content grid */}
+          <div className="grid lg:grid-cols-2 gap-12 items-start mb-16">
+
+            {/* Left — who we are */}
+            <div>
+              <h3 className="text-xl font-extrabold text-slate-800 mb-4">Who We Are</h3>
+              <p className="text-slate-600 leading-relaxed mb-4">
+                Every return filed through our platform is reviewed by a qualified expert — not just processed by software. Our team brings deep, practical knowledge built from years of working directly with Indian SMEs, manufacturers, traders, and service businesses across all major GST categories.
+              </p>
+              <p className="text-slate-600 leading-relaxed mb-4">
+                We started Kanaku because we saw a gap: small businesses were either overpaying CA firms for basic compliance, or relying on error-prone manual processes. We built a platform that combines the speed of technology with the accuracy of experienced human review — giving you the best of both.
+              </p>
+              <p className="text-slate-600 leading-relaxed">
+                Our founders have personally filed thousands of GSTR-1 and GSTR-3B returns, handled GST audits, and resolved ITC disputes. That real-world experience is embedded into every workflow, alert, and check on the Kanaku platform.
+              </p>
+            </div>
+
+            {/* Right — why it matters */}
+            <div className="space-y-4">
+              <h3 className="text-xl font-extrabold text-slate-800 mb-4">Why It Matters</h3>
+              {[
+                {
+                  icon: '🎓',
+                  title: 'Qualified Experts Behind Every Filing',
+                  desc: 'Every GST return goes through a human expert review before submission. No return is filed purely by automation.',
+                },
+                {
+                  icon: '📋',
+                  title: 'Deep Knowledge of Indian Tax Law',
+                  desc: 'From Section 17(5) ITC blocks to QRMP schemes and composition filings — our team handles edge cases that generic software misses.',
+                },
+                {
+                  icon: '🤝',
+                  title: 'Built Around Client Trust',
+                  desc: 'We operate with full transparency. Every action taken on your behalf is logged and visible to you on your dashboard.',
+                },
+                {
+                  icon: '📞',
+                  title: 'Real Support — Not a Chatbot',
+                  desc: 'When you have a compliance question, you speak to an accountant who knows your file — not a generic helpdesk.',
+                },
+              ].map(item => (
+                <div key={item.title} className="flex gap-4 bg-slate-50 rounded-2xl p-4 border border-slate-100">
+                  <span className="text-2xl shrink-0 mt-0.5">{item.icon}</span>
+                  <div>
+                    <p className="font-bold text-slate-800 text-sm mb-1">{item.title}</p>
+                    <p className="text-slate-500 text-xs leading-relaxed">{item.desc}</p>
+                  </div>
+                </div>
+              ))}
+            </div>
+          </div>
+
+          {/* Mission banner */}
+          <div className="bg-[#00307e] rounded-2xl p-8 sm:p-10 text-white text-center">
+            <p className="text-xs font-bold uppercase tracking-widest text-blue-300 mb-3">Our Mission</p>
+            <p className="text-xl sm:text-2xl font-extrabold leading-snug max-w-3xl mx-auto mb-5">
+              &ldquo;To make GST compliance and professional bookkeeping accessible, affordable, and stress-free for every Indian small business.&rdquo;
+            </p>
+            <p className="text-blue-200 text-sm max-w-xl mx-auto">
+              We believe every business — regardless of size — deserves the same quality of financial expertise that large companies take for granted.
+            </p>
+          </div>
+
+        </div>
+      </section>
+
       {/* ── CTA Banner ── */}
       <section className="bg-[#00307e] text-white py-16">
         <div className="max-w-3xl mx-auto px-4 sm:px-6 text-center">
@@ -411,6 +508,7 @@ export default function Home() {
           <div className="flex gap-6 text-sm">
             <a href="#features" className="hover:text-white transition-colors">Features</a>
             <a href="#pricing" className="hover:text-white transition-colors">Pricing</a>
+            <a href="#about" className="hover:text-white transition-colors">About Us</a>
             <a href={WA_URL} target="_blank" rel="noopener noreferrer" className="hover:text-white transition-colors">WhatsApp</a>
             <a href={`${APP_URL}/login`} className="hover:text-white transition-colors">Login</a>
           </div>
