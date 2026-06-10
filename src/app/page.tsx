@@ -110,11 +110,12 @@ export default function Home() {
 
       {/* ── Pillars bar ── */}
       <section className="bg-[#001f52] text-white">
-        <div className="max-w-6xl mx-auto px-4 sm:px-6 py-8 grid grid-cols-1 sm:grid-cols-3 gap-0 divide-y sm:divide-y-0 sm:divide-x divide-white/10 text-center">
+        <div className="max-w-6xl mx-auto px-4 sm:px-6 py-8 grid grid-cols-1 sm:grid-cols-4 gap-0 divide-y sm:divide-y-0 sm:divide-x divide-white/10 text-center">
           {[
             { icon: '🏢', label: 'Built for Indian SMEs' },
             { icon: '⚙️', label: 'Structured Compliance Workflow' },
             { icon: '🔒', label: 'Secure Document Handling' },
+            { icon: '🏆', label: 'Run by Experts with 20+ Years of Experience' },
           ].map(p => (
             <div key={p.label} className="py-5 sm:py-4 px-6">
               <span className="text-2xl block mb-2">{p.icon}</span>
