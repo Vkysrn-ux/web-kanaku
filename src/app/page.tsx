@@ -263,7 +263,7 @@ export default function Home() {
                   highlight: true,
                 },
                 {
-                  name: 'QRMP',
+                  name: 'QRMP (Quarterly Return Monthly Payment)',
                   price: '₹2,499',
                   period: '/Quarter',
                   desc: 'Unlimited volume, dedicated accountant',
@@ -434,7 +434,7 @@ export default function Home() {
                 {
                   icon: '📋',
                   title: 'Deep Knowledge of Indian Tax Law',
-                  desc: 'From Section 17(5) ITC blocks to QRMP schemes and composition filings — our team handles edge cases that generic software misses.',
+                  desc: 'From Section 17(5) ITC blocks to QRMP (Quarterly Return Monthly Payment) schemes and composition filings — our team handles edge cases that generic software misses.',
                 },
                 {
                   icon: '🤝',
