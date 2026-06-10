@@ -3,7 +3,7 @@
 import { useState } from 'react';
 
 const APP_URL = 'https://app.kanaku.co.in';
-const WA_URL  = 'https://wa.me/919787499502';
+const WA_URL  = 'https://wa.me/919585502382';
 
 export default function Home() {
   const [menuOpen, setMenuOpen] = useState(false);
