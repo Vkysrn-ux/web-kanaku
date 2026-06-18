@@ -394,7 +394,6 @@ export default function Home() {
           <div className="grid grid-cols-2 sm:grid-cols-4 gap-4 mb-16">
             {[
               { value: '20+', label: 'Years of GST & Accounting Expertise' },
-              { value: '500+', label: 'Businesses Served Across India' },
               { value: '100%', label: 'Expert-Reviewed Returns — No Automation-Only Filing' },
               { value: '₹0', label: 'Hidden Charges — Fully Transparent Pricing' },
             ].map(s => (
