@@ -412,13 +412,16 @@ export default function Home() {
             <div>
               <h3 className="text-xl font-extrabold text-slate-800 mb-4">Who We Are</h3>
               <p className="text-slate-600 leading-relaxed mb-4">
-                Every return filed through our platform is reviewed by a qualified expert — not just processed by software. Our team brings deep, practical knowledge built from years of working directly with Indian SMEs, manufacturers, traders, and service businesses across all major GST categories.
+                At Kanaku, we believe compliance should be simple, affordable, and reliable for every business. Every GST return processed through our platform is reviewed by qualified professionals — not just software. Our team brings extensive hands-on experience working with Indian SMEs, manufacturers, traders, and service businesses across a wide range of industries and GST categories.
               </p>
               <p className="text-slate-600 leading-relaxed mb-4">
-                We started Kanaku because we saw a gap: small businesses were either overpaying CA firms for basic compliance, or relying on error-prone manual processes. We built a platform that combines the speed of technology with the accuracy of experienced human review — giving you the best of both.
+                We founded Kanaku after recognising a common challenge faced by small and growing businesses: choosing between expensive compliance services and time-consuming manual processes. We built a platform that combines the speed and efficiency of technology with the accuracy and expertise of human review, delivering the best of both worlds.
+              </p>
+              <p className="text-slate-600 leading-relaxed mb-4">
+                Our goal is simple: help businesses stay compliant, organised, and informed without the complexity and high costs traditionally associated with accounting and GST management.
               </p>
               <p className="text-slate-600 leading-relaxed">
-                Our founders have personally filed thousands of GSTR-1 and GSTR-3B returns, handled GST audits, and resolved ITC disputes. That real-world experience is embedded into every workflow, alert, and check on the Kanaku platform.
+                The practical experience of our compliance and bookkeeping professionals is embedded into every workflow, validation check, alert, and insight available on the Kanaku platform.
               </p>
             </div>
 
@@ -462,10 +465,10 @@ export default function Home() {
           <div className="bg-[#00307e] rounded-2xl p-8 sm:p-10 text-white text-center">
             <p className="text-xs font-bold uppercase tracking-widest text-blue-300 mb-3">Our Mission</p>
             <p className="text-xl sm:text-2xl font-extrabold leading-snug max-w-3xl mx-auto mb-5">
-              &ldquo;To make GST compliance and professional bookkeeping accessible, affordable, and stress-free for every Indian small business.&rdquo;
+              &ldquo;To make GST compliance and professional bookkeeping simple, affordable, and stress-free for every Indian small business.&rdquo;
             </p>
-            <p className="text-blue-200 text-sm max-w-xl mx-auto">
-              We believe every business — regardless of size — deserves the same quality of financial expertise that large companies take for granted.
+            <p className="text-blue-200 text-sm max-w-2xl mx-auto">
+              We believe that every business — regardless of its size — deserves access to high-quality financial expertise and compliance support. Our mission is to empower entrepreneurs with the tools, technology, and professional guidance they need to stay compliant, make informed decisions, and focus on growing their business.
             </p>
           </div>
 
