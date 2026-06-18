@@ -391,7 +391,7 @@ export default function Home() {
           </div>
 
           {/* Stat cards */}
-          <div className="grid grid-cols-2 sm:grid-cols-4 gap-4 mb-16">
+          <div className="grid grid-cols-1 sm:grid-cols-3 gap-4 mb-16 max-w-3xl mx-auto w-full">
             {[
               { value: '20+', label: 'Years of GST & Accounting Expertise' },
               { value: '100%', label: 'Expert-Reviewed Returns — No Automation-Only Filing' },
